@@ -46,12 +46,11 @@ export async function startServer({ config, now = Date.now, spawns }: ServerOpti
   const perIp = new Map<string, number>();
   const alive = new WeakMap<WebSocket, boolean>();
 
+  // Nginx sets X-Real-IP from the socket; X-Forwarded-For's first hop is client-controlled.
   const clientIp = (req: http.IncomingMessage) => {
     const remote = req.socket.remoteAddress ?? '';
-    const forwarded = req.headers['x-forwarded-for'];
-    if (config.trustProxy && LOOPBACK.has(remote) && typeof forwarded === 'string') {
-      return forwarded.split(',')[0]!.trim();
-    }
+    const real = req.headers['x-real-ip'];
+    if (config.trustProxy && LOOPBACK.has(remote) && typeof real === 'string' && real) return real;
     return remote;
   };
 

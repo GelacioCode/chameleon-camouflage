@@ -1,0 +1,24 @@
+# /etc/systemd/system/chameleon.service
+# Set ExecStart to the output of `command -v node` (systemd doesn't load nvm).
+
+[Unit]
+Description=Office Camouflage game server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=chameleon
+Group=chameleon
+WorkingDirectory=/srv/chameleon
+EnvironmentFile=/etc/chameleon/server.env
+ExecStart=/usr/bin/node /srv/chameleon/apps/server/dist/index.js
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

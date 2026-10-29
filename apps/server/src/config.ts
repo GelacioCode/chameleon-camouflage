@@ -38,7 +38,8 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): Config {
     port: int(env, 'PORT', 3101, 0, 65535),
     allowedOrigins: origins.length ? origins : DEV_ORIGINS,
     maxRoomPlayers: int(env, 'MAX_ROOM_PLAYERS', 8, 2, SETTINGS_LIMITS.maxPlayers[1]),
-    maxConnectionsPerIp: int(env, 'MAX_CONNECTIONS_PER_IP', 12, 1, 1000),
+    // Office players often share one NAT address.
+    maxConnectionsPerIp: int(env, 'MAX_CONNECTIONS_PER_IP', 32, 1, 1000),
     trustProxy: env.TRUST_PROXY !== 'false',
     production,
   };
