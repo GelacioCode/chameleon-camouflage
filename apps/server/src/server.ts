@@ -20,6 +20,7 @@ export interface GameServer {
 }
 
 const HEARTBEAT_MS = 20_000;
+const MAX_CATCH_UP_TICKS = 5;
 const LOOPBACK = new Set(['127.0.0.1', '::1', '::ffff:127.0.0.1']);
 
 export async function startServer({ config, now = Date.now, spawns }: ServerOptions): Promise<GameServer> {
@@ -82,7 +83,16 @@ export async function startServer({ config, now = Date.now, spawns }: ServerOpti
     });
   });
 
-  const tick = setInterval(() => manager.update(), TICK_MS);
+  // Timers drift (and are coarse on Windows); run ticks by elapsed time instead.
+  let nextTick = performance.now();
+  const tick = setInterval(() => {
+    const t = performance.now();
+    for (let n = 0; t >= nextTick && n < MAX_CATCH_UP_TICKS; n++) {
+      manager.update();
+      nextTick += TICK_MS;
+    }
+    if (t - nextTick > TICK_MS * MAX_CATCH_UP_TICKS) nextTick = t;
+  }, TICK_MS / 2);
   const heartbeat = setInterval(() => {
     for (const ws of wss.clients) {
       if (!alive.get(ws)) {
