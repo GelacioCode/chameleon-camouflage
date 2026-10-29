@@ -1,0 +1,17 @@
+{
+  "map": "office-map-v6",
+  "hash": "8e0640c7",
+  "colliders": 344,
+  "movementObstacles": 344,
+  "occluders": 187,
+  "playerRadius": 0.2,
+  "seekerSpawn": {
+    "x": 7.8,
+    "z": 9.24
+  },
+  "hiderSpawns": 17,
+  "routeSamples": 672,
+  "walkedLegs": 6,
+  "failures": [],
+  "ok": true
+}

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Reference inputs, kept local
+Office_Map_v6/
+Office_Map_v6.zip
+Office_Camouflage_Game_Claude_Handoff.md

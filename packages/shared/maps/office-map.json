@@ -1,0 +1,646 @@
+{
+  "id": "office-map-v6",
+  "version": 6,
+  "source": {
+    "image": "floor-plan.png",
+    "width": 2048,
+    "height": 1041,
+    "method": "manual visual tracing",
+    "scaleStatus": "estimated; not a measured survey",
+    "metersPerPixel": 0.024,
+    "originPx": [
+      1160,
+      515
+    ],
+    "axis": "x right; z down; y up",
+    "notes": [
+      "Seat availability icons and assignments are not reproduced.",
+      "Room boundaries follow the supplied screenshot; small doors and service details are simplified.",
+      "Window positions and column colors are inferred from photos; their registration to this plan is approximate."
+    ]
+  },
+  "boundsPx": [
+    310,
+    30,
+    2010,
+    1005
+  ],
+  "banks": [
+    {
+      "id": "north-1",
+      "cx": 653,
+      "cz": 216,
+      "width": 98,
+      "depth": 356,
+      "count": 5,
+      "orientation": "vertical"
+    },
+    {
+      "id": "south-1",
+      "cx": 653,
+      "cz": 592,
+      "width": 98,
+      "depth": 280,
+      "count": 4,
+      "orientation": "vertical"
+    },
+    {
+      "id": "north-2",
+      "cx": 802,
+      "cz": 216,
+      "width": 98,
+      "depth": 356,
+      "count": 5,
+      "orientation": "vertical"
+    },
+    {
+      "id": "south-2",
+      "cx": 802,
+      "cz": 592,
+      "width": 98,
+      "depth": 280,
+      "count": 4,
+      "orientation": "vertical"
+    },
+    {
+      "id": "north-3",
+      "cx": 951,
+      "cz": 216,
+      "width": 98,
+      "depth": 356,
+      "count": 5,
+      "orientation": "vertical"
+    },
+    {
+      "id": "south-3",
+      "cx": 951,
+      "cz": 663,
+      "width": 98,
+      "depth": 424,
+      "count": 6,
+      "orientation": "vertical"
+    },
+    {
+      "id": "north-4",
+      "cx": 1103,
+      "cz": 216,
+      "width": 98,
+      "depth": 356,
+      "count": 5,
+      "orientation": "vertical"
+    },
+    {
+      "id": "south-4",
+      "cx": 1103,
+      "cz": 663,
+      "width": 98,
+      "depth": 424,
+      "count": 6,
+      "orientation": "vertical"
+    },
+    {
+      "id": "north-5",
+      "cx": 1252,
+      "cz": 216,
+      "width": 98,
+      "depth": 356,
+      "count": 5,
+      "orientation": "vertical"
+    },
+    {
+      "id": "south-5",
+      "cx": 1252,
+      "cz": 663,
+      "width": 98,
+      "depth": 424,
+      "count": 6,
+      "orientation": "vertical"
+    },
+    {
+      "id": "north-6",
+      "cx": 1401,
+      "cz": 216,
+      "width": 98,
+      "depth": 356,
+      "count": 5,
+      "orientation": "vertical"
+    },
+    {
+      "id": "south-6",
+      "cx": 1401,
+      "cz": 663,
+      "width": 98,
+      "depth": 424,
+      "count": 6,
+      "orientation": "vertical"
+    },
+    {
+      "id": "south-window",
+      "cx": 1181,
+      "cz": 965,
+      "width": 660,
+      "depth": 52,
+      "count": 10,
+      "orientation": "horizontal"
+    },
+    {
+      "id": "east-annex-1",
+      "cx": 1583,
+      "cz": 823,
+      "width": 94,
+      "depth": 334,
+      "count": 5,
+      "orientation": "vertical"
+    },
+    {
+      "id": "east-annex-2",
+      "cx": 1727,
+      "cz": 849,
+      "width": 94,
+      "depth": 282,
+      "count": 4,
+      "orientation": "vertical"
+    }
+  ],
+  "columns": [
+    {
+      "id": "column-west",
+      "cx": 624,
+      "cz": 484,
+      "width": 40,
+      "depth": 40
+    },
+    {
+      "id": "column-center",
+      "cx": 1080,
+      "cz": 484,
+      "width": 40,
+      "depth": 40
+    },
+    {
+      "id": "column-northeast",
+      "cx": 1535,
+      "cz": 36,
+      "width": 36,
+      "depth": 25
+    },
+    {
+      "id": "column-east-core",
+      "cx": 1988,
+      "cz": 484,
+      "width": 43,
+      "depth": 40
+    }
+  ],
+  "walls": [
+    {
+      "id": "outer-north",
+      "a": [
+        310,
+        30
+      ],
+      "b": [
+        2010,
+        30
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "outer-east",
+      "a": [
+        2010,
+        30
+      ],
+      "b": [
+        2010,
+        1005
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "outer-south",
+      "a": [
+        310,
+        1005
+      ],
+      "b": [
+        2010,
+        1005
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "outer-west",
+      "a": [
+        310,
+        30
+      ],
+      "b": [
+        310,
+        1005
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "west-services",
+      "a": [
+        545,
+        30
+      ],
+      "b": [
+        545,
+        615
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "reception-top",
+      "a": [
+        310,
+        615
+      ],
+      "b": [
+        545,
+        615
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "reception-bottom",
+      "a": [
+        310,
+        795
+      ],
+      "b": [
+        545,
+        795
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "meeting-west",
+      "a": [
+        545,
+        795
+      ],
+      "b": [
+        545,
+        1005
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "meeting-north-a",
+      "a": [
+        545,
+        795
+      ],
+      "b": [
+        573,
+        795
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "meeting-north-b",
+      "a": [
+        615,
+        795
+      ],
+      "b": [
+        835,
+        795
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "meeting-east",
+      "a": [
+        835,
+        795
+      ],
+      "b": [
+        835,
+        1005
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "data-west-a",
+      "a": [
+        1515,
+        30
+      ],
+      "b": [
+        1515,
+        221
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "data-west-b",
+      "a": [
+        1515,
+        275
+      ],
+      "b": [
+        1515,
+        470
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "data-south",
+      "a": [
+        1515,
+        470
+      ],
+      "b": [
+        1650,
+        470
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "core-west",
+      "a": [
+        1650,
+        30
+      ],
+      "b": [
+        1650,
+        470
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "core-south",
+      "a": [
+        1650,
+        610
+      ],
+      "b": [
+        2010,
+        610
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "core-bottom-left",
+      "a": [
+        1515,
+        610
+      ],
+      "b": [
+        1650,
+        610
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "core-left-a",
+      "a": [
+        1515,
+        470
+      ],
+      "b": [
+        1515,
+        520
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "core-left-b",
+      "a": [
+        1515,
+        572
+      ],
+      "b": [
+        1515,
+        610
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "toilets-west-a",
+      "a": [
+        1835,
+        610
+      ],
+      "b": [
+        1835,
+        725
+      ],
+      "height": 3.2
+    },
+    {
+      "id": "toilets-west-b",
+      "a": [
+        1835,
+        775
+      ],
+      "b": [
+        1835,
+        1005
+      ],
+      "height": 3.2
+    }
+  ],
+  "zones": [
+    {
+      "name": "Lockers & service rooms",
+      "rect": [
+        310,
+        30,
+        545,
+        615
+      ],
+      "blocked": true
+    },
+    {
+      "name": "Reception",
+      "rect": [
+        310,
+        615,
+        545,
+        795
+      ],
+      "blocked": false
+    },
+    {
+      "name": "Sagada meeting room",
+      "rect": [
+        545,
+        795,
+        835,
+        1005
+      ],
+      "blocked": false
+    },
+    {
+      "name": "Data center",
+      "rect": [
+        1515,
+        30,
+        1650,
+        470
+      ],
+      "blocked": true
+    },
+    {
+      "name": "Building core",
+      "rect": [
+        1650,
+        30,
+        2010,
+        610
+      ],
+      "blocked": true
+    },
+    {
+      "name": "IT hub / services",
+      "rect": [
+        1515,
+        470,
+        1650,
+        610
+      ],
+      "blocked": true
+    },
+    {
+      "name": "Restrooms",
+      "rect": [
+        1835,
+        610,
+        2010,
+        1005
+      ],
+      "blocked": true
+    }
+  ],
+  "routePx": [
+    [
+      1485,
+      900
+    ],
+    [
+      1485,
+      422
+    ],
+    [
+      568,
+      422
+    ],
+    [
+      568,
+      755
+    ],
+    [
+      864,
+      755
+    ],
+    [
+      864,
+      895
+    ],
+    [
+      1485,
+      895
+    ]
+  ],
+  "decorationSeed": 20261029,
+  "monitorOnRatio": 0.6,
+  "meetingRoom": {
+    "partition": "glass",
+    "doorOpen": true,
+    "doorAngle": -1.5707963267948966
+  },
+  "artAssets": "asset-sources.json",
+  "brandingReservedPx": {
+    "northSign": {
+      "center": [
+        1060,
+        35
+      ],
+      "width": 250,
+      "heightMeters": 1.1
+    }
+  },
+  "wallpaperSeparationMeters": 4,
+  "paintings": [
+    {
+      "x": 750,
+      "z": 39,
+      "rotation": 3.141592653589793,
+      "wall": "north"
+    },
+    {
+      "x": 1370,
+      "z": 39,
+      "rotation": 3.141592653589793,
+      "wall": "north"
+    },
+    {
+      "x": 550,
+      "z": 200,
+      "rotation": -1.5707963267948966,
+      "wall": "west-services"
+    },
+    {
+      "x": 550,
+      "z": 500,
+      "rotation": -1.5707963267948966,
+      "wall": "west-services"
+    },
+    {
+      "x": 1510,
+      "z": 140,
+      "rotation": 1.5707963267948966,
+      "wall": "data-west"
+    },
+    {
+      "x": 1510,
+      "z": 340,
+      "rotation": 1.5707963267948966,
+      "wall": "data-west"
+    },
+    {
+      "x": 1830,
+      "z": 665,
+      "rotation": 1.5707963267948966,
+      "wall": "restroom-west"
+    },
+    {
+      "x": 1830,
+      "z": 885,
+      "rotation": 1.5707963267948966,
+      "wall": "restroom-west"
+    },
+    {
+      "x": 315,
+      "z": 705,
+      "rotation": -1.5707963267948966,
+      "wall": "reception-west"
+    },
+    {
+      "x": 700,
+      "z": 1000,
+      "rotation": 0,
+      "wall": "meeting-south"
+    },
+    {
+      "x": 1580,
+      "z": 1000,
+      "rotation": 0,
+      "wall": "annex-south"
+    },
+    {
+      "x": 1750,
+      "z": 1000,
+      "rotation": 0,
+      "wall": "annex-south"
+    }
+  ],
+  "expectedArtworkCount": 12,
+  "expectedWallpaperCount": 30
+}

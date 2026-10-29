@@ -1,0 +1,28 @@
+{
+  "name": "chameleon-camouflage",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n server,client -c blue,green \"npm run dev -w @chameleon/server\" \"npm run dev -w @chameleon/client\"",
+    "typecheck": "npm run typecheck --workspaces --if-present && tsc -p tsconfig.scripts.json",
+    "test": "vitest run",
+    "build": "npm run build -w @chameleon/client && npm run build -w @chameleon/server",
+    "start": "node apps/server/dist/index.js",
+    "validate:map": "tsx scripts/validate-map.ts",
+    "load:test": "tsx scripts/load-test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "concurrently": "10.0.6",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "5.0.5"
+  }
+}
